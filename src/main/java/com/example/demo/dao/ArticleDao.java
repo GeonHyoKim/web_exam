@@ -6,15 +6,16 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
-import com.example.demo.Dto.Article;
+import com.example.demo.dto.Article;
 
 @Mapper
 public interface ArticleDao {
 	
+	
 	@Insert("""
 			INSERT INTO article
 				SET title = #{title}
-				, `body` = #{body}
+				, body = #{body}
 				, memberId = #{id}
 			""")
 	void writeArticle(int id, String title, String body);
@@ -26,8 +27,9 @@ public interface ArticleDao {
 	
 	@Select("""
 			SELECT * FROM article
-				WHERE id = #{id}
+				where id = #{id}
 			""")
 	Article getArticleById(int id);
+	
 
 }

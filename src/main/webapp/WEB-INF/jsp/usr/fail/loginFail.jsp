@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>실패</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<div>${message}</div>
+	<div>로그인 실패 - 없는 아이디입니다.</div>
 	<a href="/usr/home/main">홈으로 가기</a>
 </body>
 </html>

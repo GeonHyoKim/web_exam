@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>성공</title>
 </head>
 <body>
-	<div> 성공 </div>
-	<a href="/">홈으로 가기</a>
+	<div>${message}</div>
+	<a href="/usr/home/main">홈으로 가기</a>
 </body>
 </html>

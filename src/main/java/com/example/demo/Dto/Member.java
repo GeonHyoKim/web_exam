@@ -1,4 +1,4 @@
-package com.example.demo.Dto;
+package com.example.demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Member {
 	private int id;
-	private String eMail;
+	private String email;
 	private String loginPw;
 	private String name;
 }

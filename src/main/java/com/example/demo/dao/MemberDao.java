@@ -5,25 +5,24 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-import com.example.demo.Dto.Member;
+import com.example.demo.dto.Member;
 
 @Mapper
 public interface MemberDao {
 	
 	@Insert("""
 			INSERT INTO `member`
-				SET eMail = #{eMail}
+				SET email = #{email}
 				, loginPw = #{loginPw}
 				, name = #{name}
 			""")
-	void joinMember(String eMail, String loginPw, String name);
+	void joinMember(String email, String loginPw, String name);
 	
 	@Select("""
 			SELECT * FROM `member`
 				WHERE email = #{email}
 			""")
-	Member getLoginId(String eMail);
-	
+	Member getMemberId(String email);
 	
 	@Update("""
 			UPDATE `member`
@@ -31,5 +30,7 @@ public interface MemberDao {
 				WHERE id = #{id}
 			""")
 	void modifyPw(int id, String loginPw);
+	
+	
 
 }

@@ -8,10 +8,8 @@
 </head>
 <body>
 	<a href="/">home</a>
-	<a href="/usr/member/join">join</a>
-	<a href="/usr/member/login">login</a>
-	<a href="/usr/member/logout">logout</a>
-	<a href="/usr/member/myPage">myPage</a>
-	<a href="/usr/home/articleHome">article</a>
+	<a href="/usr/home/articleHome">articleHome</a>
+	<a href="/usr/article/list">Article_List</a>
+	<a href="/usr/article/write">Artice_Write</a>
 </body>
 </html>

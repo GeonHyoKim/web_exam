@@ -13,7 +13,7 @@
 			<thead>
 				<tr>
 					<th>게시글번호</th>
-					<th>이름</th>
+					<th>제목</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -31,7 +31,8 @@
 			</c:if>
 		</table>
 
-
+		
+		
 		<a href="/">home</a>
 	</div>
 </body>
